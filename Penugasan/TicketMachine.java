@@ -42,7 +42,8 @@ public class TicketMachine
         if(balance>=price)
         {
             System.out.println("Ticket Out");
-            System.out.println("BlueJ Line Ticket " + price + " cents");
+            System.out.println("BlueJ Line Ticket");
+            System.out.println(price + " cents");
             
             total += price;
             balance -= price;
