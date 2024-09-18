@@ -48,6 +48,6 @@ public class TicketMachine
             balance -= price;
         }
         else
-            System.out.println("Gimme atleast " + (price - balance) + "more cents.");
+            System.out.println("Give me atleast " + (price - balance) + " more cents.");
     }
 }
