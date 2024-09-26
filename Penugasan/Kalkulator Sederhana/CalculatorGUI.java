@@ -3,19 +3,22 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class CalculatorDisplay {
+public class CalculatorGUI {
     private JFrame frame;
     private JTextField displayField;
     private CalculatorLogic logic;
     private Display display;
+    private double firstNum = 0;
+    private String operator = "";
+    private boolean operatorPressed = false;
 
-    public CalculatorDisplay() {
+    public CalculatorGUI() {
         logic = new CalculatorLogic();
         display = new Display();
-        createAndShowDisplay();
+        createAndShowGUI();
     }
 
-    private void createAndShowDisplay() {
+    private void createAndShowGUI() {
         frame = new JFrame("Simple Calculator");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(300, 400);
@@ -49,25 +52,29 @@ public class CalculatorDisplay {
     }
 
     private class ButtonClickListener implements ActionListener {
-        private double firstNum = 0;
-        private String operator = "";
-        
         @Override
         public void actionPerformed(ActionEvent e) {
             String command = e.getActionCommand();
 
             if (command.charAt(0) >= '0' && command.charAt(0) <= '9') {
+                // Number buttons
+                if (operatorPressed) {
+                    display.clearDisplay();  // Clear the display for new number input
+                    operatorPressed = false;
+                }
                 display.updateDisplay(command);
                 displayField.setText(display.getDisplay());
             } else if (command.equals("C")) {
+                // Clear button
                 display.clearDisplay();
                 displayField.setText("");
                 firstNum = 0;
                 operator = "";
             } else if (command.equals("=")) {
+                // Equal button
                 double secondNum = Double.parseDouble(display.getDisplay());
                 double result = 0;
-                
+
                 switch (operator) {
                     case "+":
                         result = logic.add(firstNum, secondNum);
@@ -86,16 +93,17 @@ public class CalculatorDisplay {
                 display.clearDisplay();
                 display.updateDisplay(String.valueOf(result));
                 displayField.setText(display.getDisplay());
-                operator = "";
+                operator = "";  // Reset operator after calculation
             } else {
-                firstNum = Double.parseDouble(display.getDisplay());
+                // Operator buttons (+, -, *, /)
+                firstNum = Double.parseDouble(display.getDisplay());  // Store the first number
                 operator = command;
-                display.clearDisplay();
+                operatorPressed = true;  // Flag to indicate operator was pressed
             }
         }
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(CalculatorDisplay::new);
+        SwingUtilities.invokeLater(CalculatorGUI::new);
     }
 }
