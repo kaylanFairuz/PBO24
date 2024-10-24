@@ -17,9 +17,10 @@ public class Main
         System.out.println("Options: ");
         System.out.println("1. Insert money");
         System.out.println("2. Print tickets");
-        System.out.println("3. Quit");
 
         while(true) {
+            System.out.println("");
+            System.out.println("Balance: " + park.getBalance());
             System.out.print("Enter your number option: ");
             int pilihan = scanner.nextInt();
                 
@@ -29,9 +30,10 @@ public class Main
                 park.insertMoney(jumlah);
             } else if (pilihan == 2) {
                 park.issueTicket();
-            } else if (pilihan == 3) {
-                System.out.println("Thank you. Goodbye");
+                System.out.println("Thank you. Goodbye.");
                 break;
+            } else {
+                System.out.println("Invalid option.");
             }
         }
 

@@ -16,8 +16,6 @@ public class ParkingTicketMachine
         balance = 0;
         ticketPrice = 5000;
         ticketTime = 0;
-        
-        
     }
 
     public void insertMoney(int amount)
@@ -43,14 +41,12 @@ public class ParkingTicketMachine
                 ticketTime += 1;
             }
             
-            System.out.println("You have bought " + getTimePurchased() + " rupiahs worth of ticket, your current balance is " + balance + " rupiahs.");
+            System.out.println("You have bought " + getTimePurchased() + " hours worth of ticket, your change is " + balance + " rupiah");
         }
     }
     
-    
-    
     /**
-     * Helper function
+     * Helper method
      */
     public int getBalance() {
         return balance;

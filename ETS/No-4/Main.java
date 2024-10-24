@@ -76,6 +76,9 @@ public class Main
                     break;
                 }
                 break;
+                
+            } else {
+                System.out.println("Opsi tidak valid.");
             }
         }
 
