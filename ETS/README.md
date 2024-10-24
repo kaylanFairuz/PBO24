@@ -1,4 +1,7 @@
 # Evaluasi Tengah Semester PBO G 2024
+Nama: Kaylan Fairuza Aqila
+NRP: 5025231092
+
 ## Soal
 
 1. Apa yang dimaksud dengan _inheritance_/**pewarisan** dalam OOP? Berikan contoh penerapan pewarisan dengan menunjukkan hubungan antara kelas induk dan kelas turunan.
