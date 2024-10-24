@@ -5,9 +5,7 @@ import java.util.Scanner;
  * ParkingTicketMachine
  */
 public class Main
-{
-    
-    
+{    
     public static void main(String[] args) {
         ParkingTicketMachine park = new ParkingTicketMachine();
         Scanner scanner = new Scanner(System.in);

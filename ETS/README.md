@@ -19,15 +19,25 @@
    b. Implementasikan kodenya.
 
 ## Jawaban
-1. _Inheritance_ adalah proses pewarisan atribut dari kelas induk oleh kelas turunan. Tujuan dari _inheritance_ adalah pengefisienan kode/mencegah penulisan kode yang berulang untuk satu kelas yang mirip dengan kelas lainnya.
+1. _Inheritance_ adalah proses pewarisan atribut dan method dari kelas induk oleh kelas turunan. Tujuan dari _inheritance_ adalah pengefisienan kode/mencegah penulisan kode yang berulang untuk satu kelas yang mirip dengan kelas lainnya.
    
    Salah satu contoh penerapan pewarisan adalah pada kelas `hewan`. Setiap hewan memiliki ciri-ciri makhluk hidup, dimana kemudian yang membedakan satu hewan dengan hewan lainnya adalah kingdom, genus, dan seterusnya. Misalnya kelas `hewan` dapat diturunkan menjadi dua kelas turunan yang berbeda, yaitu `mamalia` dan `reptil` dimana kedua kelas turunan ini mewarisi sifat hewan pada umumnya, tetapi memiliki perbedaannya tersendiri.
 
-2. Konstruktor berfungsi untuk menginisialisasi variabel dalam objek saat pembuatan objek baru dari sebuah kelas. Dengan konstruktor, nilai dari sebuah variabel dalam objek dapat ditentukan langsung saat pembuatan objek tersebut. Implementasi kelas `Book` dapat dilihat [disini](Book.java).
+   Contoh implementasi _inheritance_ dapat dilihat [disini](No-1)
+   
+   <img src="No-1/no-1.png">
+
+2. Konstruktor berfungsi untuk menginisialisasi variabel dalam objek saat pembuatan objek baru dari sebuah kelas. Dengan konstruktor, nilai dari sebuah variabel dalam objek dapat ditentukan langsung saat pembuatan objek tersebut
+   
+   Contoh implementasi kelas `Book` dapat dilihat [disini](No-2).
+
+   <img src="No-2/no-2.png">
 
 3. Implementasi kelas `ParkingTicketMachine` dapat dilihat [disini](No-3)
+
+   <img src="No-3/no-3.png">
    
 4. (a) Desain kelas adalah sebagai berikut:
-   
+   <img src="No-4/no-4.png">
    
    (b) Implementasi dapat dilihat [disini](No-4).
