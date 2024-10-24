@@ -38,6 +38,7 @@
    <img src="No-3/no-3.png">
    
 4. (a) Desain kelas adalah sebagai berikut:
+   
    <img src="No-4/no-4.png">
    
    (b) Implementasi dapat dilihat [disini](No-4).
