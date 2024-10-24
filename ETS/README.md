@@ -23,6 +23,8 @@ NRP: 5025231092
    b. Implementasikan kodenya.
 
 ## Jawaban
+[Demo ETS](https://www.youtube.com/watch?v=GFlVXSXqEPM) (Youtube)
+
 1. _Inheritance_ adalah proses pewarisan atribut dan method dari kelas induk oleh kelas turunan. Tujuan dari _inheritance_ adalah pengefisienan kode/mencegah penulisan kode yang berulang untuk satu kelas yang mirip dengan kelas lainnya.
    
    Salah satu contoh penerapan pewarisan adalah pada kelas `hewan`. Setiap hewan memiliki ciri-ciri makhluk hidup, dimana kemudian yang membedakan satu hewan dengan hewan lainnya adalah kingdom, genus, dan seterusnya. Misalnya kelas `hewan` dapat diturunkan menjadi dua kelas turunan yang berbeda, yaitu `mamalia` dan `reptil` dimana kedua kelas turunan ini mewarisi sifat hewan pada umumnya, tetapi memiliki perbedaannya tersendiri.
