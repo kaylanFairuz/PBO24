@@ -25,8 +25,8 @@
 
 2. Konstruktor berfungsi untuk menginisialisasi variabel dalam objek saat pembuatan objek baru dari sebuah kelas. Dengan konstruktor, nilai dari sebuah variabel dalam objek dapat ditentukan langsung saat pembuatan objek tersebut. Implementasi kelas `Book` dapat dilihat [disini](Book.java).
 
-3. Implementasi kelas `ParkingTicketMachine` dapat dilihat [disini](ParkingTicketMachine.java)
+3. Implementasi kelas `ParkingTicketMachine` dapat dilihat [disini](No-3)
    
 4. (a) Desain kelas adalah sebagai berikut:
    
-   (b) Implementasi dapat dilihat [disini](FoodOrder.java).
+   (b) Implementasi dapat dilihat [disini](No-4).
