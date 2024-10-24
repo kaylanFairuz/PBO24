@@ -23,4 +23,10 @@
    
    Salah satu contoh penerapan pewarisan adalah pada kelas `hewan`. Setiap hewan memiliki ciri-ciri makhluk hidup, dimana kemudian yang membedakan satu hewan dengan hewan lainnya adalah kingdom, genus, dan seterusnya. Misalnya kelas `hewan` dapat diturunkan menjadi dua kelas turunan yang berbeda, yaitu `mamalia` dan `reptil` dimana kedua kelas turunan ini mewarisi sifat hewan pada umumnya, tetapi memiliki perbedaannya tersendiri.
 
-2. Konstruktor berfungsi untuk menginisialisasi variabel dalam objek saat pembuatan objek baru dari sebuah kelas. Dengan konstruktor, nilai dari sebuah variabel dalam objek dapat ditentukan langsung saat pembuatan objek tersebut.
+2. Konstruktor berfungsi untuk menginisialisasi variabel dalam objek saat pembuatan objek baru dari sebuah kelas. Dengan konstruktor, nilai dari sebuah variabel dalam objek dapat ditentukan langsung saat pembuatan objek tersebut. Implementasi kelas `Book` dapat dilihat [disini](Book.java).
+
+3. Implementasi kelas `ParkingTicketMachine` dapat dilihat [disini](ParkingTicketMachine.java)
+   
+4. (a) Desain kelas adalah sebagai berikut:
+   
+   (b) Implementasi dapat dilihat [disini](FoodOrder.java).
