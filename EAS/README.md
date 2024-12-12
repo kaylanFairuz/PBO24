@@ -20,7 +20,7 @@ NRP: 5025231092
 ## Jawaban
 1. _Inheritance_ adalah proses pewarisan atribut dan method dari kelas induk oleh kelas turunan. Tujuan dari _inheritance_ adalah pengefisienan kode/mencegah penulisan kode yang berulang untuk satu kelas yang mirip dengan kelas lainnya. 
 
-    Dalam Snake Game, _inheritance_ dilakukan pada class `Snake` dari class `JFrame` dalam library Java Swing serta pada class `Board` dari class `JPanel` dalam library Java Swing.
+    Dalam Snake Game, _inheritance_ dapat dilihat pada class `Snake` dari class `JFrame` dalam library Java Swing serta pada class `Board` dari class `JPanel` dalam library Java Swing.
 
     ```JAVA
     public class Snake extends JFrame {
